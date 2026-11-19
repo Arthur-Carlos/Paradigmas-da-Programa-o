@@ -1,12 +1,12 @@
 :- dynamic livro/4.
 
 livro("Dom Quixote", "Miguel de Cervantes", 1605, disponivel).
-livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, disponivel).
+livro("O Senhor dos AnÃ©is", "J.R.R. Tolkien", 1954, disponivel).
 livro("1984", "George Orwell", 1949, emprestado).
 livro("A Metamorfose", "Franz Kafka", 1915, disponivel).
-livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry", 1943, emprestado).
+livro("O Pequeno PrÃ­ncipe", "Antoine de Saint-ExupÃ©ry", 1943, emprestado).
 livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 1997, disponivel).
-livro("A Revolução dos Bichos", "George Orwell", 1945, disponivel).
+livro("A RevoluÃ§Ã£o dos Bichos", "George Orwell", 1945, disponivel).
 
 disponivel(Titulo):- livro(Titulo,_,_,disponivel).
 autor(Autor, Titulo):- livro(Titulo,Autor,_,_).
